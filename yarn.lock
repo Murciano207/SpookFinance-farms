@@ -17503,17 +17503,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-yogi-uikit@yogi-fi/yogi-uikit:
-  version "0.1.5"
-  resolved "https://codeload.github.com/yogi-fi/yogi-uikit/tar.gz/40d1a6ac87b10feff757b5e9d584cf4edb569a62"
-  dependencies:
-    "@types/lodash" "^4.14.162"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-transition-group "^4.4.1"
-    styled-system "^5.1.5"
-
-yogi-uikit_rc@^0.1.1:
+yogi-uikit_rc@^0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/yogi-uikit_rc/-/yogi-uikit_rc-0.1.6.tgz#cd1510361f50dad8c295b4d482bb56b4fba4faef"
   integrity sha512-O760QwTTrXJyH0C9M/F6F89VDhOGocIQTi5JfbVwm5wUXCdhSrAbQUG9rM88FJk1AR6LHpphXp02KwvfNMpOVQ==
