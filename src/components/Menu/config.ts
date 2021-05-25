@@ -20,18 +20,17 @@ const config: MenuEntry[] = [
         href: `${process.env.REACT_APP_POOLS}`,
         external: true,
       },
+      {
+        label: 'Buy',
+        href: `${process.env.REACT_APP_BUY}`,
+        external: true,
+      },
     ],
   },
   {
     label: 'Farms',
     icon: 'FarmIcon',
     href: '/farms',
-  },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    href: `${process.env.REACT_APP_POOLS}`,
-    external: true,
   },
   {
     label: 'Github',

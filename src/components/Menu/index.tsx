@@ -25,7 +25,6 @@ const Menu = (props) => {
       setLang={setSelectedLanguage}
       yogiPriceUsd={yogiPrice}
       links={config}
-      priceLink="https://exchange.yogi.fi/"
       {...props}
     />
   );
