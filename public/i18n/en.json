@@ -1,0 +1,741 @@
+{
+  "data": [
+    {
+      "data": {
+        "stringId": 278,
+        "text": "Farm"
+      }
+    },
+    {
+      "data": {
+        "stringId": 280,
+        "text": "Staking"
+      }
+    },
+    {
+      "data": {
+        "stringId": 284,
+        "text": "Exchange"
+      }
+    },
+    {
+      "data": {
+        "stringId": 286,
+        "text": "Docs"
+      }
+    },
+    {
+      "data": {
+        "stringId": 288,
+        "text": "Voting"
+      }
+    },
+    {
+      "data": {
+        "stringId": 292,
+        "text": "Unlock Wallet"
+      }
+    },
+    {
+      "data": {
+        "stringId": 294,
+        "text": "Your %asset% Balance"
+      }
+    },
+    {
+      "data": {
+        "stringId": 296,
+        "text": "Total %asset% Supply"
+      }
+    },
+    {
+      "data": {
+        "stringId": 298,
+        "text": "LOCKED"
+      }
+    },
+    {
+      "data": {
+        "stringId": 300,
+        "text": "Pending harvest"
+      }
+    },
+    {
+      "data": {
+        "stringId": 302,
+        "text": "New rewards per block"
+      }
+    },
+    {
+      "data": {
+        "stringId": 306,
+        "text": "See the Kitchen"
+      }
+    },
+    {
+      "data": {
+        "stringId": 308,
+        "text": "Telegram"
+      }
+    },
+    {
+      "data": {
+        "stringId": 310,
+        "text": "Blog"
+      }
+    },
+    {
+      "data": {
+        "stringId": 312,
+        "text": "Github"
+      }
+    },
+    {
+      "data": {
+        "stringId": 314,
+        "text": "Twitter"
+      }
+    },
+    {
+      "data": {
+        "stringId": 316,
+        "text": "Deposit"
+      }
+    },
+    {
+      "data": {
+        "stringId": 318,
+        "text": "Earn"
+      }
+    },
+    {
+      "data": {
+        "stringId": 320,
+        "text": "Stake LP tokens to earn YOGI"
+      }
+    },
+    {
+      "data": {
+        "stringId": 322,
+        "text": "Stake YOGI, get SYRUP."
+      }
+    },
+    {
+      "data": {
+        "stringId": 328,
+        "text": "You can swap back anytime"
+      }
+    },
+    {
+      "data": {
+        "stringId": 330,
+        "text": "%asset% Earned"
+      }
+    },
+    {
+      "data": {
+        "stringId": 332,
+        "text": "Tokens Staked"
+      }
+    },
+    {
+      "data": {
+        "stringId": 334,
+        "text": "Every time you stake and unstake YOGI tokens, the contract will automatically harvest YOGI rewards for you!"
+      }
+    },
+    {
+      "data": {
+        "stringId": 346,
+        "text": "Rewards will be calculated per block and total rewards will be distributed automatically at the end of each project\u2019s farming period."
+      }
+    },
+    {
+      "data": {
+        "stringId": 348,
+        "text": "Pool"
+      }
+    },
+    {
+      "data": {
+        "stringId": 350,
+        "text": "Coming soon"
+      }
+    },
+    {
+      "data": {
+        "stringId": 352,
+        "text": "APR"
+      }
+    },
+    {
+      "data": {
+        "stringId": 354,
+        "text": "Total Liquidity"
+      }
+    },
+    {
+      "data": {
+        "stringId": 356,
+        "text": "View on explorer"
+      }
+    },
+    {
+      "data": {
+        "stringId": 358,
+        "text": "YOGI price"
+      }
+    },
+    {
+      "data": {
+        "stringId": 360,
+        "text": "%asset% Tokens Earned"
+      }
+    },
+    {
+      "data": {
+        "stringId": 362,
+        "text": "%num% blocks until farming ends"
+      }
+    },
+    {
+      "data": {
+        "stringId": 364,
+        "text": "Total Syrup Staked"
+      }
+    },
+    {
+      "data": {
+        "stringId": 380,
+        "text": "1 YOGI = 1 SYRUP"
+      }
+    },
+    {
+      "data": {
+        "stringId": 382,
+        "text": "Coming soon..."
+      }
+    },
+    {
+      "data": {
+        "stringId": 384,
+        "text": "Your Stake"
+      }
+    },
+    {
+      "data": {
+        "stringId": 386,
+        "text": "Farming starts in %num% Blocks"
+      }
+    },
+    {
+      "data": {
+        "stringId": 388,
+        "text": "Finished"
+      }
+    },
+    {
+      "data": {
+        "stringId": 390,
+        "text": "Farming ends in %num% Blocks"
+      }
+    },
+    {
+      "data": {
+        "stringId": 392,
+        "text": "Project Site"
+      }
+    },
+    {
+      "data": {
+        "stringId": 394,
+        "text": "Unstake SYRUP"
+      }
+    },
+    {
+      "data": {
+        "stringId": 400,
+        "text": "SYRUP holders proportionally split 25% of YOGI block emissions each day (10 YOGI per block), Rewards are distributed each block."
+      }
+    },
+
+    {
+      "data": {
+        "stringId": 406,
+        "text": "Rewards are calculated per block."
+      }
+    },
+    {
+      "data": {
+        "stringId": 408,
+        "text": "Total"
+      }
+    },
+    {
+      "data": {
+        "stringId": 409,
+        "text": "Start"
+      }
+    },
+    {
+      "data": {
+        "stringId": 410,
+        "text": "End"
+      }
+    },
+    {
+      "data": {
+        "stringId": 412,
+        "text": "View project site"
+      }
+    },
+    {
+      "data": {
+        "stringId": 414,
+        "text": "Your Project? \ud83d\udc40"
+      }
+    },
+    {
+      "data": {
+        "stringId": 416,
+        "text": "Create a pool for your token"
+      }
+    },
+    {
+      "data": {
+        "stringId": 418,
+        "text": "Apply now"
+      }
+    },
+    {
+      "data": {
+        "stringId": 516,
+        "text": "Apply to launch"
+      }
+    },
+    {
+      "data": {
+        "stringId": 520,
+        "text": "Community"
+      }
+    },
+    {
+      "data": {
+        "stringId": 522,
+        "text": "Core"
+      }
+    },
+    {
+      "data": {
+        "stringId": 526,
+        "text": "Available"
+      }
+    },
+    {
+      "data": {
+        "stringId": 528,
+        "text": "My Wallet"
+      }
+    },
+    {
+      "data": {
+        "stringId": 530,
+        "text": "Sign out"
+      }
+    },
+    {
+      "data": {
+        "stringId": 532,
+        "text": "Harvest all (%count%)"
+      }
+    },
+    {
+      "data": {
+        "stringId": 534,
+        "text": "YOGI Stats"
+      }
+    },
+    {
+      "data": {
+        "stringId": 536,
+        "text": "Total YOGI Supply"
+      }
+    },
+    {
+      "data": {
+        "stringId": 540,
+        "text": "New YOGI/block"
+      }
+    },
+    {
+      "data": {
+        "stringId": 542,
+        "text": "Farms & Staking"
+      }
+    },
+    {
+      "data": {
+        "stringId": 544,
+        "text": "YOGI to Harvest"
+      }
+    },
+    {
+      "data": {
+        "stringId": 546,
+        "text": "YOGI in Wallet"
+      }
+    },
+    {
+      "data": {
+        "stringId": 548,
+        "text": "Collecting YOGI"
+      }
+    },
+    {
+      "data": {
+        "stringId": 552,
+        "text": "YOGI to Collect"
+      }
+    },
+    {
+      "data": {
+        "stringId": 562,
+        "text": "Harvest"
+      }
+    },
+    {
+      "data": {
+        "stringId": 564,
+        "text": "Approve"
+      }
+    },
+    {
+      "data": {
+        "stringId": 568,
+        "text": "Select"
+      }
+    },
+    {
+      "data": {
+        "stringId": 574,
+        "text": "Staking Pool"
+      }
+    },
+    {
+      "data": {
+        "stringId": 576,
+        "text": "Yogi"
+      }
+    },
+    {
+      "data": {
+        "stringId": 578,
+        "text": "Automated portfolio manager, liquidity provider, and price sensor."
+      }
+    },
+    {
+      "data": {
+        "stringId": 582,
+        "text": "Launch Time"
+      }
+    },
+    {
+      "data": {
+        "stringId": 584,
+        "text": "For Sale"
+      }
+    },
+    {
+      "data": {
+        "stringId": 586,
+        "text": "YOGI to burn (USD)"
+      }
+    },
+    {
+      "data": {
+        "stringId": 588,
+        "text": "Unstake"
+      }
+    },
+    {
+      "data": {
+        "stringId": 590,
+        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest YOGI rewards for you!"
+      }
+    },
+    {
+      "data": {
+        "stringId": 592,
+        "text": "How to take part"
+      }
+    },
+    {
+      "data": {
+        "stringId": 594,
+        "text": "Before Sale"
+      }
+    },
+    {
+      "data": {
+        "stringId": 596,
+        "text": "Buy YOGI and BNB tokens"
+      }
+    },
+    {
+      "data": {
+        "stringId": 598,
+        "text": "Get YOGI-BNB LP tokens by adding YOGI and BNB liquidity"
+      }
+    },
+    {
+      "data": {
+        "stringId": 600,
+        "text": "During Sale"
+      }
+    },
+    {
+      "data": {
+        "stringId": 604,
+        "text": "After Sale"
+      }
+    },
+    {
+      "data": {
+        "stringId": 606,
+        "text": "Claim the tokens you purchased, along with any unspent funds."
+      }
+    },
+    {
+      "data": {
+        "stringId": 608,
+        "text": "Done!"
+      }
+    },
+    {
+      "data": {
+        "stringId": 610,
+        "text": "Read more"
+      }
+    },
+    {
+      "data": {
+        "stringId": 612,
+        "text": "Connect"
+      }
+    },
+    {
+      "data": {
+        "stringId": 614,
+        "text": "Trade in for YOGI, or keep for your collection!"
+      }
+    },
+    {
+      "data": {
+        "stringId": 618,
+        "text": "Register for a chance to win"
+      }
+    },
+    {
+      "data": {
+        "stringId": 620,
+        "text": "Learn more"
+      }
+    },
+    {
+      "data": {
+        "stringId": 624,
+        "text": "Trade in"
+      }
+    },
+    {
+      "data": {
+        "stringId": 626,
+        "text": "You will receive"
+      }
+    },
+    {
+      "data": {
+        "stringId": 632,
+        "text": "How it works"
+      }
+    },
+    {
+      "data": {
+        "stringId": 636,
+        "text": "If you are not selected, you won\u2019t be able to claim. Better luck next time!"
+      }
+    },
+    {
+      "data": {
+        "stringId": 640,
+        "text": "How are winners selected?"
+      }
+    },
+    {
+      "data": {
+        "stringId": 642,
+        "text": "Winners are selected at random! Good luck!"
+      }
+    },
+    {
+      "data": {
+        "stringId": 646,
+        "text": "Value if traded in"
+      }
+    },
+    {
+      "data": {
+        "stringId": 648,
+        "text": "Number minted"
+      }
+    },
+    {
+      "data": {
+        "stringId": 650,
+        "text": "Number burned"
+      }
+    },
+    {
+      "data": {
+        "stringId": 654,
+        "text": "Trade in for YOGI"
+      }
+    },
+    {
+      "data": {
+        "stringId": 656,
+        "text": "Loading\u2026"
+      }
+    },
+    {
+      "data": {
+        "stringId": 658,
+        "text": "Details"
+      }
+    },
+    {
+      "data": {
+        "stringId": 660,
+        "text": "You won!"
+      }
+    },
+    {
+      "data": {
+        "stringId": 664,
+        "text": "Can be traded until"
+      }
+    },
+    {
+      "data": {
+        "stringId": 666,
+        "text": "Wallet Disconnected"
+      }
+    },
+    {
+      "data": {
+        "stringId": 670,
+        "text": "Home"
+      }
+    },
+    {
+      "data": {
+        "stringId": 672,
+        "text": "Trade"
+      }
+    },
+    {
+      "data": {
+        "stringId": 674,
+        "text": "Farms"
+      }
+    },
+    {
+      "data": {
+        "stringId": 680,
+        "text": "Info"
+      }
+    },
+    {
+      "data": {
+        "stringId": 684,
+        "text": "More"
+      }
+    },
+    {
+      "data": {
+        "stringId": 686,
+        "text": "Liquidity"
+      }
+    },
+    {
+      "data": {
+        "stringId": 688,
+        "text": "Overview"
+      }
+    },
+    {
+      "data": {
+        "stringId": 690,
+        "text": "Token"
+      }
+    },
+    {
+      "data": {
+        "stringId": 692,
+        "text": "Pairs"
+      }
+    },
+    {
+      "data": {
+        "stringId": 694,
+        "text": "Accounts"
+      }
+    },
+    {
+      "data": {
+        "stringId": 696,
+        "text": "Stake LP tokens to earn YOGI"
+      }
+    },
+    {
+      "data": {
+        "stringId": 698,
+        "text": "Active"
+      }
+    },
+    {
+      "data": {
+        "stringId": 700,
+        "text": "Inactive"
+      }
+    },
+    {
+      "data": {
+        "stringId": 702,
+        "text": "Dual"
+      }
+    },
+    {
+      "data": {
+        "stringId": 704,
+        "text": "Compound"
+      }
+    },
+    {
+      "data": {
+        "stringId": 706,
+        "text": "Unstake %asset%"
+      }
+    },
+    {
+      "data": {
+        "stringId": 10003,
+        "text": "Announcements"
+      }
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 200
+  }
+}
