@@ -17503,10 +17503,10 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-yogi-uikit_rc@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/yogi-uikit_rc/-/yogi-uikit_rc-0.1.6.tgz#cd1510361f50dad8c295b4d482bb56b4fba4faef"
-  integrity sha512-O760QwTTrXJyH0C9M/F6F89VDhOGocIQTi5JfbVwm5wUXCdhSrAbQUG9rM88FJk1AR6LHpphXp02KwvfNMpOVQ==
+yogi-uikit_rc@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/yogi-uikit_rc/-/yogi-uikit_rc-0.1.8.tgz#edcc05483e762f0cca0b67ea82a227a6c9aff48e"
+  integrity sha512-5f70VYLxuJ3sku1+YXbpfLM5BOsAc2ynjBOmIl4jj4k5dEbwZo/hl7Q4Y2eB11YD9qHZCDy+gYKvw25yGFseaQ==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
