@@ -27,7 +27,7 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
   const { onReward } = useHarvest(pid);
   const { onStake } = useStake(pid);
 
-  const canCompound = pid === 0;
+  const canCompound = false;
 
   const rawEarningsBalance = getBalanceNumber(earnings);
   const displayBalance = rawEarningsBalance.toLocaleString();
