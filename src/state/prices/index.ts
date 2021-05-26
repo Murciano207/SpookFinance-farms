@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { PriceList, PriceState } from 'state/types';
+import { fetchYogiPrice } from 'utils/gqlHelpers';
 
 const initialState: PriceState = {
   isLoading: false,
@@ -9,11 +10,12 @@ const initialState: PriceState = {
 
 // Thunks
 export const fetchPrices = createAsyncThunk<PriceList>('prices/fetch', async () => {
-  const response = await fetch('https://mirror.yogi.fi/prices');
+  let response = await fetch('https://mirror.yogi.fi/prices');
   const data = (await response.json()) as PriceList;
 
-  // FIXME: crowdsale price, fetch yogi price from the 80/20 pool
-  data['YOGI'] = data[process.env.REACT_APP_CHAIN_NATIVE] * parseFloat(process.env.REACT_APP_CROWDSALE_RATIO);
+  response = await fetchYogiPrice();
+  data['YOGI'] = Number(response['tokenPrices'][0]['price']);
+
   return data;
 });
 
