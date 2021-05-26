@@ -15,7 +15,7 @@ export const fetchPrices = createAsyncThunk<PriceList>('prices/fetch', async () 
 
   response = await fetchYogiPrice();
   data['YOGI'] = Number(response['tokenPrices'][0]['price']);
-  
+
   return data;
 });
 
