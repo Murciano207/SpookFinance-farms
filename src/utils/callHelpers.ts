@@ -25,7 +25,7 @@ export const unstake = async (masterYogiContract, pid, amount, account) => {
 
 export const harvest = async (masterYogiContract, pid, account) => {
   return masterYogiContract.methods
-    .deposit(pid, pid)
+    .deposit(pid, 0)
     .send({ from: account })
     .on('transactionHash', (tx) => {
       return tx.transactionHash;
