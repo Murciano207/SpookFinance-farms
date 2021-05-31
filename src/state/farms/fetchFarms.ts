@@ -59,6 +59,8 @@ const fetchFarms = async () => {
     }),
   );
 
+  console.log(data);
+
   return data;
 };
 

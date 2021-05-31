@@ -11,7 +11,7 @@ import CardHeading from './CardHeading';
 import CardActionsContainer from './CardActionsContainer';
 import ApyButton from './ApyButton';
 
-import { getFarmApy } from 'utils/apy';
+import { getFarmApr } from 'utils/apr';
 import { useGetApiPrice } from 'state/hooks';
 import { BigNumber } from 'bignumber.js';
 
@@ -93,8 +93,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, ethereum, account }) => {
   const earnLabel = 'YOGI';
   const yogiPrice = useGetApiPrice('YOGI');
 
-  const apy = getFarmApy(farm.poolWeight, new BigNumber(farm.yogiPerBlock), new BigNumber(yogiPrice), farm.liquidity);
-  const farmAPY = apy ? apy.toFixed(2) : 0;
+  const apr = getFarmApr(farm.poolWeight, new BigNumber(farm.yogiPerBlock), new BigNumber(yogiPrice), farm.liquidity);
+  const farmAPR = apr ? apr.toFixed(2) : 0;
 
   return (
     <FCard>
@@ -107,7 +107,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, ethereum, account }) => {
           {farm.liquidity ? (
             <>
               <ApyButton farm={farm} />
-              {farmAPY}%
+              {farmAPR}%
             </>
           ) : (
             <Skeleton height={24} width={80} />
