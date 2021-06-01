@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Modal, Text, LinkExternal, Flex } from 'yogi-uikit_rc';
 import useI18n from 'hooks/useI18n';
-import { estimateCompound, apyModalRoi } from 'utils/compoundApyHelpers';
+import { compoundFactor, apyModalRoi } from 'utils/compoundApyHelpers';
 import { Farm } from 'state/types';
 import { useGetApiPrice } from 'state/hooks';
 import { getFarmApr } from 'utils/apr';
@@ -15,7 +15,7 @@ interface ApyCalculatorModalProps {
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
   margin-bottom: 24px;
 `;
@@ -36,12 +36,12 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({ onDismiss, farm
   const poolUrl = `${process.env.REACT_APP_POOLS}/#/pool/${farm.address}`;
 
   const apr = getFarmApr(farm.poolWeight, new BigNumber(farm.yogiPerBlock), new BigNumber(yogiPrice), farm.liquidity);
-  const principal = 1000 / yogiPrice;
+  const principal = 1000;
 
-  const compound1D = estimateCompound({ days: 1, apr });
-  const compound7D = estimateCompound({ days: 7, apr });
-  const compound30D = estimateCompound({ days: 30, apr });
-  const compound365D = estimateCompound({ days: 365, apr });
+  const compound1D = compoundFactor({ days: 1, apr });
+  const compound7D = compoundFactor({ days: 7, apr });
+  const compound30D = compoundFactor({ days: 30, apr });
+  const compound365D = compoundFactor({ days: 365, apr });
 
   return (
     <Modal title="ROI" onDismiss={onDismiss}>
@@ -56,20 +56,12 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({ onDismiss, farm
             {TranslateString(999, 'ROI')}
           </Text>
         </GridItem>
-        <GridItem>
-          <Text fontSize="12px" bold color="textSubtle" textTransform="uppercase" mb="20px">
-            {TranslateString(999, 'YOGI per $1000')}
-          </Text>
-        </GridItem>
         {/* 1 day row */}
         <GridItem>
           <Text>1d</Text>
         </GridItem>
         <GridItem>
           <Text>{apyModalRoi({ compoundFactor: compound1D, amountInvested: principal })}%</Text>
-        </GridItem>
-        <GridItem>
-          <Text>{compound1D}</Text>
         </GridItem>
         {/* 7 day row */}
         <GridItem>
@@ -78,9 +70,6 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({ onDismiss, farm
         <GridItem>
           <Text>{apyModalRoi({ compoundFactor: compound7D, amountInvested: principal })}%</Text>
         </GridItem>
-        <GridItem>
-          <Text>{compound7D}</Text>
-        </GridItem>
         {/* 30 day row */}
         <GridItem>
           <Text>30d</Text>
@@ -88,18 +77,12 @@ const ApyCalculatorModal: React.FC<ApyCalculatorModalProps> = ({ onDismiss, farm
         <GridItem>
           <Text>{apyModalRoi({ compoundFactor: compound30D, amountInvested: principal })}%</Text>
         </GridItem>
-        <GridItem>
-          <Text>{compound30D}</Text>
-        </GridItem>
         {/* 365 day / APY row */}
         <GridItem>
-          <Text>365d(APY)</Text>
+          <Text>365d</Text>
         </GridItem>
         <GridItem>
           <Text>{apyModalRoi({ compoundFactor: compound365D, amountInvested: principal })}%</Text>
-        </GridItem>
-        <GridItem>
-          <Text>{compound365D}</Text>
         </GridItem>
       </Grid>
       <Description fontSize="12px" color="textSubtle">

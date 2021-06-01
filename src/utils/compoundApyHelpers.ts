@@ -1,9 +1,10 @@
-export const estimateCompound = ({ days, apr }) => {
-  console.log('estimateCompound', days, apr);
-  const daily = 0.01;
-  return daily * days;
+export const compoundFactor = ({ days, apr }) => {
+  const daily = apr / 365;
+  console.log(daily);
+  const apy = Math.pow(daily / 100 + 1, days);
+  return apy;
 };
 
 export const apyModalRoi = ({ compoundFactor, amountInvested }) => {
-  return compoundFactor.toFixed(3);
+  return ((compoundFactor - 1) * 100).toFixed(2);
 };

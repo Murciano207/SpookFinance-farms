@@ -116,12 +116,6 @@
     },
     {
       "data": {
-        "stringId": 322,
-        "text": "Stake YOGI, get SYRUP."
-      }
-    },
-    {
-      "data": {
         "stringId": 328,
         "text": "You can swap back anytime"
       }
@@ -200,18 +194,6 @@
     },
     {
       "data": {
-        "stringId": 364,
-        "text": "Total Syrup Staked"
-      }
-    },
-    {
-      "data": {
-        "stringId": 380,
-        "text": "1 YOGI = 1 SYRUP"
-      }
-    },
-    {
-      "data": {
         "stringId": 382,
         "text": "Coming soon..."
       }
@@ -246,19 +228,6 @@
         "text": "Project Site"
       }
     },
-    {
-      "data": {
-        "stringId": 394,
-        "text": "Unstake SYRUP"
-      }
-    },
-    {
-      "data": {
-        "stringId": 400,
-        "text": "SYRUP holders proportionally split 25% of YOGI block emissions each day (10 YOGI per block), Rewards are distributed each block."
-      }
-    },
-
     {
       "data": {
         "stringId": 406,
