@@ -48,10 +48,10 @@ const YogiStats: React.FC = () => {
           <Text fontSize="14px">{TranslateString(537, 'Circulating Supply')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(supply)} decimals={0} />
         </Row>
-        <Row>
+        {/* <Row>
           <Text fontSize="14px">{TranslateString(538, 'YOGI Burned')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(burned)} decimals={0} />
-        </Row>
+        </Row> */}
         <Row>
           <Text fontSize="14px">{TranslateString(536, 'Total Supply')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(totalSupply)} decimals={0} />
