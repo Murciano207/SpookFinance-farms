@@ -1,6 +1,5 @@
 export const compoundFactor = ({ days, apr }) => {
   const daily = apr / 365;
-  console.log(daily);
   const apy = Math.pow(daily / 100 + 1, days);
   return apy;
 };
