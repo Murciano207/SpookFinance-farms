@@ -3,9 +3,8 @@ import { Card, CardBody, Heading, Text } from 'yogi-uikit_rc';
 import BigNumber from 'bignumber.js/bignumber';
 import styled from 'styled-components';
 import { getBalanceNumber } from 'utils/formatBalance';
-import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance';
+import { useSupply } from 'hooks/useTokenBalance';
 import useI18n from 'hooks/useI18n';
-import { getAddress } from 'utils/addressHelpers';
 import CardValue from './CardValue';
 import { useFarms, useGetApiPrice } from '../../../state/hooks';
 
@@ -24,19 +23,16 @@ const Row = styled.div`
 
 const YogiStats: React.FC = () => {
   const TranslateString = useI18n();
-  const totalSupply = useTotalSupply();
-  const burnedBalance = useBurnedBalance(getAddress('yogi'));
+  const { supply, totalSupply, burned } = useSupply();
   const farms = useFarms();
   const yogiPrice = useGetApiPrice('YOGI');
-  const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
-  const yogiSupply = getBalanceNumber(circSupply);
   const [marketCap, setMarketCap] = useState(0);
   const yogiPerBlock = new BigNumber(farms[0].yogiPerBlock);
 
   useEffect(() => {
-    const newMarketCap = getBalanceNumber(new BigNumber(yogiPrice).times(circSupply));
+    const newMarketCap = getBalanceNumber(new BigNumber(yogiPrice).times(supply));
     setMarketCap(newMarketCap);
-  }, [yogiPrice, circSupply]);
+  }, [yogiPrice, supply]);
 
   return (
     <StyledYogiStats>
@@ -45,12 +41,20 @@ const YogiStats: React.FC = () => {
           {TranslateString(534, 'YOGI Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(536, 'Total YOGI Supply')}</Text>
-          {yogiSupply && <CardValue fontSize="14px" value={yogiSupply} decimals={0} />}
-        </Row>
-        <Row>
           <Text fontSize="14px">{TranslateString(999, 'Market Cap')}</Text>
           <CardValue fontSize="14px" value={marketCap} decimals={0} prefix="$" />
+        </Row>
+        <Row>
+          <Text fontSize="14px">{TranslateString(537, 'Circulating Supply')}</Text>
+          <CardValue fontSize="14px" value={getBalanceNumber(supply)} decimals={0} />
+        </Row>
+        <Row>
+          <Text fontSize="14px">{TranslateString(538, 'YOGI Burned')}</Text>
+          <CardValue fontSize="14px" value={getBalanceNumber(burned)} decimals={0} />
+        </Row>
+        <Row>
+          <Text fontSize="14px">{TranslateString(536, 'Total Supply')}</Text>
+          <CardValue fontSize="14px" value={getBalanceNumber(totalSupply)} decimals={0} />
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New YOGI/block')}</Text>

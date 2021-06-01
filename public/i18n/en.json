@@ -327,7 +327,19 @@
     {
       "data": {
         "stringId": 536,
-        "text": "Total YOGI Supply"
+        "text": "Total Supply"
+      }
+    },
+    {
+      "data": {
+        "stringId": 537,
+        "text": "Circulating Supply"
+      }
+    },
+    {
+      "data": {
+        "stringId": 538,
+        "text": "YOGI Burned"
       }
     },
     {
