@@ -59,7 +59,7 @@ const YogiStats: React.FC = () => {
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New YOGI/block')}</Text>
           <Text bold fontSize="14px">
-            {farms[0].yogiPerBlock === undefined ? 0 : yogiPerBlock.div(1e18).toNumber()}
+            {farms[0].yogiPerBlock === undefined ? 0 : yogiPerBlock.div(1e18).div(2).toNumber()}
           </Text>
         </Row>
       </CardBody>
