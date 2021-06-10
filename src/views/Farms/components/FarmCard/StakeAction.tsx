@@ -25,7 +25,6 @@ const IconButtonWrapper = styled.div`
 `;
 
 const StakeAction: React.FC<FarmCardActionsProps> = ({ tokenBalance, stakedBalance, tokenName, pid }) => {
-  const TranslateString = useI18n();
   const { onStake } = useStake(pid);
   const { onUnstake } = useUnstake(pid);
 
@@ -39,37 +38,32 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({ tokenBalance, stakedBalan
   const [onPresentWithdraw] = useModal(<WithdrawModal max={stakedBalance} onConfirm={onUnstake} tokenName={tokenName} />);
 
   const renderStakingButtons = () => {
-    return rawStakedBalance === 0 ? (
-      <Button style={{ width: 107.72 }} onClick={onPresentDeposit}>
-        {TranslateString(999, 'Stake')}
+    return (
+      <Button style={{ width: 120 }} onClick={onPresentDeposit}>
+        Stake
       </Button>
-    ) : (
-      <IconButtonWrapper>
-        <IconButton style={{ width: 52 }} variant="tertiary" onClick={onPresentWithdraw} mr="6px">
-          <MinusIcon color="primary" />
-        </IconButton>
-        <IconButton style={{ width: 52 }} variant="tertiary" onClick={onPresentDeposit}>
-          <AddIcon color="primary" />
-        </IconButton>
-      </IconButtonWrapper>
     );
   };
 
   const renderUnstakingButtons = () => {
     return (
-      <Button style={{ width: 107.72 }} onClick={onPresentWithdraw}>
+      <Button style={{ width: 120 }} onClick={onPresentWithdraw}>
         Unstake
       </Button>
     );
   };
 
   return (
-    <Flex justifyContent="space-between" alignItems="center">
-      <Heading color={rawTokenBalance === 0 ? 'textDisabled' : 'text'}>{displayTokenBalance}</Heading>
-      {renderStakingButtons()}
-      <Heading color={rawStakedBalance === 0 ? 'textDisabled' : 'text'}>{displayStakedBalance}</Heading>
-      {renderUnstakingButtons()}
-    </Flex>
+    <>
+      <Flex justifyContent="space-between" alignItems="center" marginBottom="1rem">
+        <Heading color={rawTokenBalance === 0 ? 'textDisabled' : 'text'}>{displayTokenBalance}</Heading>
+        {renderStakingButtons()}
+      </Flex>
+      <Flex justifyContent="space-between" alignItems="center">
+        <Heading color={rawStakedBalance === 0 ? 'textDisabled' : 'text'}>{displayStakedBalance}</Heading>
+        {renderUnstakingButtons()}
+      </Flex>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-const FAST_INTERVAL = 60 * 1000;
-const SLOW_INTERVAL = 5 * 60 * 1000;
+const FAST_INTERVAL = 10 * 1000;
+const SLOW_INTERVAL = 60 * 1000;
 
 const RefreshContext = React.createContext({ slow: 0, fast: 0 });
 
