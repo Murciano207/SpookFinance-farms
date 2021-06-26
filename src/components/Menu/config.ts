@@ -28,6 +28,12 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
+    label: 'Vote',
+    icon: 'GroupsIcon',
+    href: 'https://snapshot.org/#/yogi-fi.eth',
+    external: true,
+  },
+  {
     label: 'Github',
     icon: 'GithubIcon',
     href: 'https://github.com/yogi-fi',
